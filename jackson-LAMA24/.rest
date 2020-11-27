@@ -1,0 +1,29 @@
+###signup post 
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+   "name": "Matheus",
+   "email": "math@email.com",
+   "password": "abcdef",
+   "role": "ADMIN" 
+} 
+
+###login post 
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "jess@email.com",
+    "password": "123456"
+}
+
+###create band post 
+POST http://localhost:3003/band/create
+Content-Type: application/json
+
+{
+   "name": "Blind Guardian",
+   "music_genre": "Metal",
+   "responsible": "Hansi Kürsch" 
+} 
