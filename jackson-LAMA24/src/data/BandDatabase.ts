@@ -1,5 +1,5 @@
 import { BaseDatabase } from "./BaseDatabase";
-// import { Band } from "../model/Band";
+import { Band } from "../model/Band";
 
 export class BandDatabase extends BaseDatabase {
 
@@ -24,14 +24,14 @@ export class BandDatabase extends BaseDatabase {
             throw new Error(error.sqlMessage || error.message);
         }
     }
-}
 
-    //   public async getUserByEmail(id: string): Promise<Band> {
-    //     const result = await this.getConnection()
-    //       .select("*")
-    //       .from(BandDatabase.TABLE_NAME)
-    //       .where({ id });
+      public async getBandByIdOrName(id: string, name: string): Promise<Band> {
+        const result = await this.getConnection()
+          .select("*")
+          .from(BandDatabase.TABLE_NAME)
+          .where({id} || {name});
 
-    //     return Band.toBandModel(result[0]);
-    //   }
+        return Band.toBandModel(result[0]);
+      }
 
+    }

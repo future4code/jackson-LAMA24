@@ -50,3 +50,9 @@ export interface BandInputDTO{
     responsible: string;
     token: string
 }
+
+export interface getBand{
+    id: string,
+    name: string;
+    token: string
+}

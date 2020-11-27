@@ -14,16 +14,18 @@ POST http://localhost:3003/user/login
 Content-Type: application/json
 
 {
-    "email": "jess@email.com",
+    "email": "mah@email.com",
     "password": "123456"
 }
 
 ###create band post 
 POST http://localhost:3003/band/create
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIwYTg1NGM0LTNhNDQtNDllOS1hZDVlLTMzOTcxNzk5M2NhMSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2MDY1MDE2NzIsImV4cCI6MTYwNjU4ODA3Mn0.N4_ygGeIHq0qCt0eIpI8uXMsFtPD-d-xdYpn1YzUUeA
 
 {
-   "name": "Blind Guardian",
+   "name": "Sepultura",
    "music_genre": "Metal",
-   "responsible": "Hansi Kürsch" 
+   "responsible": "Derrick Green"
 } 
+
