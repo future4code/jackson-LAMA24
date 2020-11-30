@@ -25,7 +25,7 @@ export class BandController {
             res.status(400).send({ error: error.message });
         }
 
-        await BaseDatabase.destroyConnection();
+        
     }
 
     // async getPostById(req: Request, res: Response) {
